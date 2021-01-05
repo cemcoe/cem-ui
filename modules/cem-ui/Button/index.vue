@@ -1,12 +1,11 @@
 <template>
-  <cem-button></cem-button>
+  <button>click</button>
   
 </template>
 
 <script>
 export default {
-  name: 'App',
-
+  name: 'CemButton'
 }
 </script>
 

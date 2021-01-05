@@ -1,19 +1,12 @@
 # cem-ui
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+Installation
+```js
+npm i cem-ui -S
 ```
 
-### Compiles and minifies for production
+Usage
+```js
+import { CemButton } from 'cem-ui';
+Vue.use( CemButton );
 ```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
