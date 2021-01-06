@@ -1,11 +1,15 @@
 import Button from './Button'
+import Cell from './Cell'
 
 export const CemButton = {}
+export const CemCell = {}
 
 CemButton.install = Vue => Vue.component(Button.name, Button)
+CemCell.install = Vue => Vue.component(Cell.name, Cell)
 
 const COMPONENTS = [
-  Button
+  Button,
+  Cell,
 ]
 
 const CemUI = {}

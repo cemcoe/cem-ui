@@ -14,6 +14,14 @@
       <cem-button @click="btnClick">测试按钮点击</cem-button>
     </div>
   </div>
+
+  <div class="cell">
+    <div class="info">Cell</div>
+    <div class="demo">
+      <cem-cell title="单元格" value="内容" />
+      <cem-cell title="单元格" value="内容" label="描述信息" />
+    </div>
+  </div>
 </template>
 
 <script>
