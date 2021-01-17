@@ -22,9 +22,20 @@
       <cem-cell title="单元格" value="内容" label="描述信息" />
     </div>
   </div>
+
+  <div class="icon">
+    <div class="info">Icon</div>
+    <div class="demo">
+      <div class="icon-item" v-for="(icon, i) in iconNameList" :key="i">
+        <cem-icon :name="icon.name"></cem-icon>
+        <span>{{ icon.name }}</span>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import iconNameList from "./iconNameList";
 export default {
   name: "App",
   setup() {
@@ -34,6 +45,7 @@ export default {
 
     return {
       btnClick,
+      iconNameList,
     };
   },
 };
@@ -43,5 +55,16 @@ export default {
 .demo {
   background-color: rgb(236, 230, 230);
   padding: 10px;
+}
+
+.icon .demo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.icon .demo .icon-item {
+  padding: 10px;
+  margin: 2px;
+  background-color: #fff;
+  text-align: center;
 }
 </style>
