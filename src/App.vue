@@ -32,10 +32,19 @@
       </div>
     </div>
   </div>
+
+  <div class="toast">
+    <div class="info">toast</div>
+    <div class="demo">
+      <button @click="toastClick">toast</button>
+    </div>
+  </div>
 </template>
 
 <script>
 import iconNameList from "./iconNameList";
+import { useToast } from "./useToast.js";
+
 export default {
   name: "App",
   setup() {
@@ -43,9 +52,15 @@ export default {
       console.log("测试按钮点击");
     };
 
+    const toastClick = function () {
+      const Toast = useToast(); // 所有的子组件都要从useToast拿到toast方法
+      Toast("Hello World");
+    };
+
     return {
       btnClick,
       iconNameList,
+      toastClick,
     };
   },
 };
