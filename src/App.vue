@@ -43,7 +43,7 @@
 
 <script>
 import iconNameList from "./iconNameList";
-import { useToast } from "./useToast.js";
+import { useToast } from '../modules/cem-ui/Toast/useToast';
 
 export default {
   name: "App",
