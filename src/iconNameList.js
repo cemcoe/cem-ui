@@ -64,5 +64,25 @@ const iconNameList = [
     name: "location",
     text: "地址",
   },
+  {
+    name: "home",
+    text: "首页"
+  },
+  {
+    name: "following",
+    text: "关注"
+  },
+  {
+    name: "island",
+    text: "小岛"
+  },
+  {
+    name: "message",
+    text: "消息"
+  },
+  {
+    name: "profile",
+    text: "我的"
+  }
 ];
 export default iconNameList
