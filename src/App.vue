@@ -1,4 +1,18 @@
 <template>
+  <div class="navbar">
+    <cem-nav-bar
+      title="NavBar"
+      @click-left="onClickLeft"
+      @click-right="onClickRight"
+    >
+      <template #left>
+        <cem-icon name="back" />
+      </template>
+      <template #right>
+        <cem-icon name="search" />
+      </template>
+    </cem-nav-bar>
+  </div>
   <div class="button">
     <div class="info">Button</div>
     <div class="demo">
@@ -43,7 +57,7 @@
 
 <script>
 import iconNameList from "./iconNameList";
-import { useToast } from '../modules/cem-ui/Toast/useToast';
+import { useToast } from "../modules/cem-ui/Toast/useToast";
 
 export default {
   name: "App",
@@ -57,10 +71,19 @@ export default {
       Toast("Hello World");
     };
 
+    const onClickLeft = () => {
+      console.log("navbar left");
+    };
+    const onClickRight = () => {
+      console.log("navbar right");
+    };
+
     return {
       btnClick,
       iconNameList,
       toastClick,
+      onClickLeft,
+      onClickRight,
     };
   },
 };
