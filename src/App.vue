@@ -38,10 +38,20 @@
   </div>
 
   <div class="icon">
-    <div class="info">Icon</div>
+    <div class="info">Icon Default Theme</div>
     <div class="demo">
       <div class="icon-item" v-for="(icon, i) in iconNameList" :key="i">
         <cem-icon :name="icon.name"></cem-icon>
+        <span>{{ icon.name }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="icon">
+    <div class="info">Icon Pink Theme</div>
+    <div class="demo">
+      <div class="icon-item" v-for="(icon, i) in iconNameList" :key="i">
+        <cem-icon :name="icon.name" theme="pink"></cem-icon>
         <span>{{ icon.name }}</span>
       </div>
     </div>

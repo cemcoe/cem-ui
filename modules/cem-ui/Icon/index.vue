@@ -15,10 +15,21 @@ export default {
     name: {
       type: String,
     },
+    theme: {
+      type: String,
+      default: ''
+    }
   },
   setup(props) {
     const iconLink = computed(() => {
-      return `#icon${props.name}`;
+      let theme
+      if(props.theme === '') {
+        theme = ''
+
+      } else {
+        theme = props.theme + '-'
+      }
+      return `#icon${theme}${props.name}`;
     });
 
     return {
