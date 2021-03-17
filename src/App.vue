@@ -63,7 +63,16 @@
       <button @click="toastClick">toast</button>
     </div>
   </div>
+
+  <div class="loading">
+    <div class="info">loading</div>
+    <div class="demo">
+      <cem-loading></cem-loading>
+    </div>
+  </div>
 </template>
+
+
 
 <script>
 import iconNameList from "./iconNameList";
